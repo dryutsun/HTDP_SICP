@@ -1,0 +1,13 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname racket_evaluation) (read-case-sensitive #t) (teachpacks ((lib "image.rkt" "teachpack" "2htdp"))) (htdp-settings #(#t constructor repeating-decimal #f #t none #f ((lib "image.rkt" "teachpack" "2htdp")) #f)))
+; Racket Syntax Teminology
+; The whole expression is called "a call to a primitive"
+; This oprator acts on 'operands'
+; RACKET Evaluation:
+; To Evaluate a Primitive Call,
+; FIRST reduce operands to values i.e. each small primitive call must be reduced
+; to a value.
+; THEN apply the primitive to the values.
+; TLDR -- Primitive Calls are evaluated from the inside out and from left to right.
+

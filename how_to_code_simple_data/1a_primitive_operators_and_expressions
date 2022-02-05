@@ -1,0 +1,24 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname 1a_primitive_operators_and_expressions) (read-case-sensitive #t) (teachpacks ((lib "image.rkt" "teachpack" "2htdp"))) (htdp-settings #(#t constructor repeating-decimal #f #t none #f ((lib "image.rkt" "teachpack" "2htdp")) #f)))
+; Racket expressions are formed using the following syntax:
+; - Open and closed paranthesis to enclose a statement
+; - a primitive operator that operates on an expression
+; - an expression that is operated upon
+
+(+ 3 4)
+(+ 3 (* 2 3))
+(sqrt 16)
+
+; PROBLEM:
+; assume that the two short sides of a right triangle have a length of 3 and 4.
+; what is the length of the long side? Write an expression in BSL that produces
+; the value of x
+
+(sqrt (+ (sqr 3) (sqr 4)))
+
+; if you take the square root of 2...
+(sqrt 2) ; this is an irrational number, it takes infite space...
+
+(+ 4 6.2 -12)
+(/ (+ 4 6.2 -12) 3)
